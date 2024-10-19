@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to the external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="converter-container shadow p-4">
+    <h3 class="text-center mb-4">🌡️ Temperature Converter</h3>
+
+    <!-- Input for temperature -->
+    <div class="mb-3">
+      <label for="inputTemperature" class="form-label">Enter Temperature</label>
+      <input type="number" class="form-control" id="inputTemperature" placeholder="Temperature">
+    </div>
+
+    <!-- Dropdown for conversion type -->
+    <div class="mb-3">
+      <label for="conversionType" class="form-label">Convert From</label>
+      <select class="form-select" id="conversionType">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <!-- Convert button -->
+    <div class="d-grid gap-2">
+      <button type="button" class="btn convert-btn" onclick="convertTemperature()">Convert</button>
+    </div>
+
+    <!-- Display result -->
+    <div class="result text-center mt-4" id="resultDisplay"></div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

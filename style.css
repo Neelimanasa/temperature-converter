@@ -1,0 +1,59 @@
+/* General body styling */
+body {
+  background: url('https://images.unsplash.com/photo-1531797245321-f4d95b27c1d5?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Main container styles */
+.converter-container {
+  margin-top: 100px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button customization */
+.convert-btn {
+  background-color: #ff6347;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.convert-btn:hover {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+/* Result styling */
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ff7f;
+}
+
+/* Form control styles */
+.form-control, .form-select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #00ff7f;
+  box-shadow: none;
+}
